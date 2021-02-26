@@ -1,0 +1,43 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href ="{% static 'css/main.css' %}" rel="stylesheet" type = 'text/css'>
+  <script src="{% static 'JavaScript/moment.min.js' %}"></script>
+  <script src="{% static 'JavaScript/main.js' %}" defer></script>
+  <title>Your Music Source</title>
+</head>
+<body>
+  <header>
+    <div class= "header" id="header">
+      <h1>Choose Your Tunes</h1>
+    </div>
+    <div class="audio-player" id="player">
+      <audio src='' value='' controls autoplay></audio>
+      <h4>Complete a search and then<br>
+          Click on results below to play a preview</h4>
+    </div>
+  </header>
+  
+  <div class= "container" id="container">
+    <form id="music-search-form">
+      <div class="form-field">
+        <input class = "search" id="search-box" type="text" placeholder="Enter your search here" required>
+      </div>
+      <div class="form-field">
+        <button id="search-button" type="submit">Find Your Jam</button> 
+      </div>
+    </form>
+    <div class = song-data>
+      <section id="songs">    
+        <ul id="song-list" class="list"></ul>
+      </section>
+    </div>
+  </div>
+  <footer>
+    <h6>&#169; 2021</h6>
+  </footer>
+</body>
+</html>

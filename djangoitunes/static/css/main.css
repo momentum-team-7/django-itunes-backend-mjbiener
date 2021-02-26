@@ -1,0 +1,49 @@
+
+
+body{
+    background-color:rgb(135, 176, 216);
+}
+
+h1 {
+    text-align: center;
+}
+h4 {
+    margin-top: 1px;
+}
+.audio-player{
+    text-align: center
+}
+#search-box{
+    margin-top: .5rem;
+    width: 15rem;
+    height: 2rem;
+    border-radius: 5em;
+}
+
+#search-button {
+    margin-top: .6rem;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 10em;
+}
+
+#song-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: solid black 3px; */
+    
+}
+
+li {
+    text-align: center;
+    margin: .2em;
+    background-color: white;
+    border: solid black 3px;
+    border-radius: 1em;
+}
+
+h6 {
+    text-align: right;
+}
